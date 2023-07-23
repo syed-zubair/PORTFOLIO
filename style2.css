@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1 {
+    color: #fff;
+    margin-top: 0;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  .theme-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .theme-switch label {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .theme-switch label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-switch input[type='checkbox'] {
+    display: none;
+  }
+  
+  .theme-switch input[type='checkbox']:checked + label {
+    background-color: #666;
+  }
+  
+  .theme-switch input[type='checkbox']:checked + label:before {
+    transform: translateX(20px);
+  }
+  
+  .dark-theme {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #090801;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(208, 25, 190, 0.1);
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    animation: slideUp 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #fff;
+  }        
